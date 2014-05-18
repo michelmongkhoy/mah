@@ -14,6 +14,9 @@ exports.Start = Component.specialize(/** @lends Start# */ {
             this.super();
         }
     },
+    substitutionValue: {
+        value: null
+    },
     handleCreateButtonAction: {
         value: function(event){
             this.substitutionValue = "rooms-create";
@@ -22,8 +25,8 @@ exports.Start = Component.specialize(/** @lends Start# */ {
     },
     handleJoinButtonAction: {
         value: function(event) {
-            this.substitutionValue = "rooms-join";
+            this.substitutionValue = "rooms";
             console.log("handleJoinButtonAction");
         }
-    }
+    },
 });
