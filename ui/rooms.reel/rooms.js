@@ -3,7 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
-var Room = require("model").Room;
+var Room = require("/model").Room;
 /**
  * @class Rooms
  * @extends Component
