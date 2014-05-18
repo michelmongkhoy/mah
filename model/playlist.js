@@ -12,5 +12,11 @@ exports.Playlist = Montage.specialize(/** @lends Playlist# */ {
         value: function Playlist() {
             this.super();
         }
+    },
+    identifier: {
+        value: null
+    },
+    name: {
+        value: null
     }
 });
