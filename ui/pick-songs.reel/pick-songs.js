@@ -53,9 +53,9 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
 
             for (var i = 0; i < playlists.length; i++) {
                 var lcPlaylist = new Playlist();
-                lcPlaylist.id = this.playlists[i].id;
-                lcPlaylist.name = this.playlists[i].label;
-                lcPlaylist.owner = this.playlists[i].owner;
+                lcPlaylist.id = playlists[i].id;
+                lcPlaylist.name = playlists[i].label;
+                lcPlaylist.owner = playlists[i].owner;
                 lcPlaylist1.songs = [];
                 this.playlists.push(lcPlaylist);
             }
