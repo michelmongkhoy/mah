@@ -84,5 +84,10 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
             var currentSelectedValue = this.songs[selectedIndex].isSelected;
             this.songs[selectedIndex].isSelected = !currentSelectedValue;
         }
+    },
+    handleSelectSongsButtonAction: {
+        value: function(event) {
+            getPlaylist(); // from mah.js
+        }
     }
 });
