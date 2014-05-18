@@ -51,7 +51,14 @@
                 "element": {"#": "selectSongsButton"},
                 "enabled": true,
                 "label": "Select Songs for me"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "songButton": {
             "prototype": "ui/mah-button-home.reel",
