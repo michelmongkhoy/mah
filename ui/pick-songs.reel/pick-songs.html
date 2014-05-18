@@ -10,14 +10,6 @@
                 "element": {"#": "owner"}
             }
         },
-        "button": {
-            "prototype": "digit/ui/button.reel",
-            "properties": {
-                "element": {"#": "button"},
-                "enabled": true,
-                "label": "Select Songs for me"
-            }
-        },
         "playlistButton": {
             "prototype": "ui/mah-button-home.reel",
             "properties": {
@@ -51,6 +43,14 @@
             },
             "bindings": {
                 "condition": {"<->": "@songs:iteration.object.isSelected"}
+            }
+        },
+        "selectSongsButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "selectSongsButton"},
+                "enabled": true,
+                "label": "Select Songs for me"
             }
         },
         "songButton": {
@@ -110,7 +110,7 @@
             </div>
             <div data-montage-id="songButton"></div>
         </div>
-        <button data-montage-id="button"></button>
+        <button data-montage-id="selectSongsButton"></button>
     </div>
 </body>
 </html>
