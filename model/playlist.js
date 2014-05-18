@@ -18,5 +18,8 @@ exports.Playlist = Montage.specialize(/** @lends Playlist# */ {
     },
     name: {
         value: null
+    },
+    songs: {
+        value: null
     }
 });
