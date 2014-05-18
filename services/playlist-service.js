@@ -12,5 +12,17 @@ exports.PlaylistService = Montage.specialize(/** @lends PlaylistService# */ {
         value: function PlaylistService() {
             this.super();
         }
+    },
+    loadPlaylist: {
+        value: function() {
+            var deferred = Promise.defer();
+
+            deferred.resolve(parser.parse(responseText));
+            deferred.reject(error);
+            
+
+
+            return deferred.promise;
+        }
     }
 });
