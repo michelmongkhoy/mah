@@ -12,5 +12,11 @@ exports.Song = Montage.specialize(/** @lends Song# */ {
         value: function Song() {
             this.super();
         }
+    },
+    identifier: {
+        value: null
+    },
+    cover: {
+        value: null
     }
 });
