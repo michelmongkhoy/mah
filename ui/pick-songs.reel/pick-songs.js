@@ -91,6 +91,7 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
             if (globalPlaylist.length > 0){
                 BeatsService.playPreview(globalPlaylist[0].id);
             }
+            this.substitutionValue = "play";
         }
     },
     substitutionValue: {
