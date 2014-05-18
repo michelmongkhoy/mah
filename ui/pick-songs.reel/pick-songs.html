@@ -10,6 +10,17 @@
                 "element": {"#": "owner"}
             }
         },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -23,6 +34,11 @@
 <body>
     <div data-montage-id="owner" class="PickSongs">
         <p data-montage-id="text"></p>
+        <ul data-montage-id="repetition">
+            <li>
+                Item
+            </li>
+        </ul>
     </div>
 </body>
 </html>
