@@ -10,27 +10,40 @@
                 "element": {"#": "owner"}
             }
         },
-        "mahButtonHome": {
+        "createButton": {
             "prototype": "ui/mah-button-home.reel",
             "properties": {
-                "element": {"#": "mahButtonHome"},
+                "element": {"#": "createButton"},
                 "label": "CREATE"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
-        "mahButtonHome2": {
+        "joinButton": {
             "prototype": "ui/mah-button-home.reel",
             "properties": {
-                "element": {"#": "mahButtonHome2"},
+                "element": {"#": "joinButton"},
                 "label": "JOIN"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false
+                }
+            ]
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Start">
-        <div data-montage-id="mahButtonHome" class="mahButtonHome"></div>
-        <div data-montage-id="mahButtonHome2" class="mahButtonHome"></div>
+        <div data-montage-id="createButton" class="mahButtonHome"></div>
+        <div data-montage-id="joinButton" class="mahButtonHome"></div>
     </div>
 </body>
 </html>
