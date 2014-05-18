@@ -16,7 +16,7 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
             this.super();
             
             // Init
-            this.playlists = [];
+/*            this.playlists = [];
             
             var lcPlaylist1 = new Playlist();
             lcPlaylist1.name = "Justin Bieber greatest hits";
@@ -47,7 +47,18 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
             lcPlaylist2.songs.push(lcSong22); 
             
             this.playlists.push(lcPlaylist2);
-            
+            */
+
+            // playlists should bet available globally
+
+            for (var i = 0; i < playlists.length; i++) {
+                var lcPlaylist = new Playlist();
+                lcPlaylist.id = playlists[i].id;
+                lcPlaylist.name = playlists[i].label;
+                lcPlaylist.owner = playlists[i].owner;
+                lcPlaylist1.songs = [];
+                this.playlists.push(lcPlaylist);
+            }
         }
     },
     playlists: {
