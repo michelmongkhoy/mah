@@ -56,15 +56,22 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
     songs: {
         value: null
     },
+    currentPlaylistIndex: {
+        value: null
+    },
     handlePlaylistButtonAction: {
         value: function(event) {
             var selectedIndex = event.detail.playlistIndex;
-            console.log(selectedIndex);
+            this.currentPlaylistIndex = selectedIndex;
             this.songs = this.playlists[selectedIndex].songs;
         }
     },
     handleSongButtonAction: {
         value: function(event) {
+            var selectedIndex = event.detail.songIndex;
+            console.log(selectedIndex);
+            var currentSelectedValue = this.songs[selectedIndex].isSelected;
+            this.songs[selectedIndex].isSelected = !currentSelectedValue;
         }
     }
 });
