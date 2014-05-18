@@ -3,6 +3,7 @@
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
+var Player = require("/model/player.js").Player;
 
 /**
  * @class Play
