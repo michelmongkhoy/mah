@@ -1,3 +1,7 @@
 .Rooms {
 
 }
+
+.Rooms .Title {
+    text-align: center;
+}
