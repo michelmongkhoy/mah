@@ -3,7 +3,29 @@
 <head>
     <title></title>
     <link rel="stylesheet" type="text/css" href="mah-button-home.css">
+     <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.label"}
+            }
+        }
+    }
+    </script>
 </head>
 <body>
+   <div data-montage-id="owner" class="TagButton">
+       <p data-montage-id="text"></p>
+    </div>
 </body>
 </html>
