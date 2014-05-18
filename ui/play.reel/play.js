@@ -16,12 +16,12 @@ exports.Play = Component.specialize(/** @lends Play# */ {
             
             this.players = [];
 
-            var lcPlayer1 = new Room();
+            var lcPlayer1 = new Player();
             lcPlayer1.identifier = "player1";
             lcPlayer1.name = "# PLayer 1";
             this.players.push(lcPlayer1);
 
-            var lcPlayer2 = new Room();
+            var lcPlayer2 = new Player();
             lcPlayer2.identifier = "room2";
             lcPlayer2.name = "# Player 2";
             this.players.push(lcPlayer2);
