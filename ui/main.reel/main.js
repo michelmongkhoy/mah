@@ -18,7 +18,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function(){
             getToken();
         }
-    }
+    },
     substitutionValue: {
         value: "picksongs"
     }
