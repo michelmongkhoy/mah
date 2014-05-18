@@ -16,7 +16,14 @@
                 "element": {"#": "goPlay"},
                 "enabled": true,
                 "label": "go to play"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+                ]
         },
         "playlistButton": {
             "prototype": "ui/mah-button-home.reel",
