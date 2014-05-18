@@ -42,6 +42,7 @@
                 "element": {"#": "songButton"}
             },
             "bindings": {
+                "detail.songIndex": {"<-": "@songs:iteration.index"},
                 "label": {"<-": "@songs:iteration.object.name"}
             },
             "listeners": [
