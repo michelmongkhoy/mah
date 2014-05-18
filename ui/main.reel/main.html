@@ -13,6 +13,13 @@
                 "element": {"#": "main"}
             }
         },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"},
+                "switchValue": "start"
+            }
+        },
         "start": {
             "prototype": "ui/start.reel",
             "properties": {
@@ -24,7 +31,9 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <div data-montage-id="start"></div>
+        <div data-montage-id="substitution">
+            <div data-arg="start" data-montage-id="start"></div>
+        </div>
     </div>
 </body>
 </html>
