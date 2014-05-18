@@ -10,10 +10,21 @@
                 "element": {"#": "owner"}
             }
         },
-        "repetition": {
+        "playlists": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "repetition"},
+                "element": {"#": "playlists"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        "songs": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "songs"},
                 "content": [
                     1,
                     2,
@@ -34,7 +45,12 @@
 <body>
     <div data-montage-id="owner" class="PickSongs">
         <p data-montage-id="text"></p>
-        <ul data-montage-id="repetition">
+        <ul data-montage-id="playlists">
+            <li>
+                Item
+            </li>
+        </ul>
+        <ul data-montage-id="songs">
             <li>
                 Item
             </li>
