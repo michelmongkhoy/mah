@@ -9,8 +9,10 @@
     display: inline-block; /* 1 */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    
     height: 2.5em;
     min-width: 2.5em; /* Don't shrink below the height. Makes a perfect circle. */;
+    
     padding: .625em 1em;
     vertical-align: middle;
     font-size: 100%; /* Override UA style. */
