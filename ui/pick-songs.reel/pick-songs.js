@@ -16,8 +16,8 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
             this.super();
             
             // Init
-/*            this.playlists = [];
-            
+            this.playlists = [];
+            /*
             var lcPlaylist1 = new Playlist();
             lcPlaylist1.name = "Justin Bieber greatest hits";
             
