@@ -10,13 +10,12 @@ var AbstractButton = require("montage/ui/base/abstract-button").AbstractButton;
  * @extends Component
  */
 exports.MahButtonHome = AbstractButton.specialize(/** @lends MahButtonHome# */ {
-    hasTemplate: {
-        value: true
-    },
-    constructor: {
-        value: function MahButtonHome() {
+     hasTemplate: {value: true},
+
+    constructor : {
+        value: function Button() {
             this.super();
-            this.classList.add("MahButtonHome");
+            this.classList.add("digit-Button");
         }
     }
 });
