@@ -4,7 +4,7 @@
 
 .digit-Button {
     
-    color: black; /* 1 */
+    color: yellow; /* 1 */
     
     display: inline-block; /* 1 */
     -moz-box-sizing: border-box;
