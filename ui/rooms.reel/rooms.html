@@ -10,6 +10,15 @@
                 "element": {"#": "owner"}
             }
         },
+        "mahButtonHome": {
+            "prototype": "ui/mah-button-home.reel",
+            "properties": {
+                "element": {"#": "mahButtonHome"}
+            },
+            "bindings": {
+                "label": {"<-": "@repetition:iteration.object.name"}
+            }
+        },
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
@@ -25,16 +34,6 @@
                 "element": {"#": "text"},
                 "value": "ROOMS"
             }
-        },
-        "text2": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text2"},
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@repetition:iteration.object.name"}
-            }
         }
     }
     </script>
@@ -43,7 +42,7 @@
     <div data-montage-id="owner" class="Rooms">
         <p data-montage-id="text" class="title"></p>
         <div data-montage-id="repetition">
-           <p data-montage-id="text2"></p>
+            <div data-montage-id="mahButtonHome"></div>
         </div>
     </div>
 </body>
