@@ -13,17 +13,17 @@ exports.Rooms = Component.specialize(/** @lends Rooms# */ {
         value: function Rooms() {
             this.super();
             
-            roomList = [];
+            this.roomList = [];
             
             var lcRoom1 = new Room();
             lcRoom1.identifier = "room1";
             lcRoom1.name = "# Room 1";
-            roomList.push(lcRoom1);
+            this.roomList.push(lcRoom1);
             
             var lcRoom2 = new Room();
             lcRoom2.identifier = "room2";
             lcRoom2.name = "# Room 2";
-            roomList.push(lcRoom2);
+            this.roomList.push(lcRoom2);
             
         }
     },
