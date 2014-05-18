@@ -36,11 +36,13 @@ exports.Rooms = Component.specialize(/** @lends Rooms# */ {
     handleCreateButtonAction: {
         value: function(event){
             this.substitutionValue = "rooms-create";
+            console.log("handleCreateButtonAction");
         }
     },
     handleJoinButtonAction: {
         value: function(event) {
             this.substitutionValue = "rooms-join";
+            console.log("handleJoinButtonAction");
         }
     }
 });
