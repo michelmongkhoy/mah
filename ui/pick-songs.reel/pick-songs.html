@@ -75,6 +75,15 @@
                 "element": {"#": "text2"},
                 "value": "SONGS"
             }
+        },
+        "selectedSongCondition" {
+            "prototype": "montage/ui/condition.reel",
+            "properties": {
+                "element": {"#": "selectedSongCondition"}
+            },
+            "bindings": {
+                "condition": {"<->": "@songs:iteration.object.isSelected"}
+            }
         }
     }
     </script>
@@ -88,6 +97,7 @@
         <hr/>
         <p data-montage-id="text2" class="subHeader"></p>
         <div data-montage-id="songs">
+            <div data-montage-id="selectedSongCondition"></div>
             <div data-montage-id="songButton"></div>
         </div>
     </div>
