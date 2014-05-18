@@ -1,3 +1,80 @@
-.MahButtonHome {
+/**
+* 1. Needed when used with an <a> element
+*/
 
+.MahButtonHome {
+    display: inline-block; /* 1 */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 2.5em;
+    min-width: 2.5em; /* Don't shrink below the height. Makes a perfect circle. */
+    margin: 0 2px;
+    padding: .625em 1em;
+    border-radius: 1.25em;
+    vertical-align: middle;
+    font-size: 100%; /* Override UA style. */
+    color: inherit; /* 1 */
+    border: 1px solid;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none; /* 1 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* States --------------------- */
+
+.MahButtonHome.montage--active {
+    background-color: hsla(0,0%,0%,.06);
+}
+
+.MahButtonHome:focus {
+    box-shadow: inset 0 0 0 1px;
+}
+
+
+
+/* Wireframe ---------------------------------------------------------- */
+
+[data-montage-skin="wireframe"] .MahButtonHome {
+    color: #4D4D4D;
+    border-color: #b3b3b3;
+    background-color: #f2f2f2;
+}
+
+[data-montage-skin="wireframe"] .MahButtonHome.montage--active {
+    background-color: #e5e5e5;
+}
+
+[data-montage-skin="wireframe"] .MahButtonHome:focus {
+    border-color: #4D4D4D;
+    box-shadow: none;
+}
+
+
+
+/* Light ---------------------------------------------------------- */
+
+[data-montage-skin="light"] .MahButtonHome {
+    color: hsla(0,0%,0%,.7);
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.5);
+    border-color: hsl(0,0%,80%);
+    background-image: -webkit-linear-gradient(top, hsl(0,0%,96%), hsl(0,0%,92%) );
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.8), inset 0 -1px 1px hsla(0,0%,0%,.04), 0 1px 0 hsla(0,0%,100%,.6);
+
+    -webkit-transform: translate3d(0px,0px,0px);
+    -moz-transform: translate3d(0px,0px,0px);
+    -ms-transform: translate3d(0px,0px,0px);
+    transform: translate3d(0px,0px,0px);
+}
+
+[data-montage-skin="light"] .MahButtonHome.montage--active {
+    border-color: hsla(0,0%,70%,1);
+    background-image: -webkit-linear-gradient(top, hsl(0,0%,90%), hsl(0,0%,86%) );
+    box-shadow: inset 0 1px 3px hsla(0,0%,0%,.2), 0 1px 0 hsla(0,0%,100%,.6);
+}
+
+[data-montage-skin="light"] .MahButtonHome:focus {
+    border-color: hsl(0,0%,50%);
 }
