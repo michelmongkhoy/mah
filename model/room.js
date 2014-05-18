@@ -12,5 +12,11 @@ exports.Room = Montage.specialize(/** @lends Room# */ {
         value: function Room() {
             this.super();
         }
+    },
+    identifier: {
+        value: null
+    },
+    name: {
+        value: null
     }
 });
