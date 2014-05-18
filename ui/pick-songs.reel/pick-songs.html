@@ -14,6 +14,9 @@
             "prototype": "ui/mah-button-home.reel",
             "properties": {
                 "element": {"#": "playlistButton"}
+            },
+            "bindings": {
+                "label": {"<-": "@repetition:iteration.object.name"}
             }
         },
         "playlists": {
@@ -29,6 +32,9 @@
             "prototype": "ui/mah-button-home.reel",
             "properties": {
                 "element": {"#": "songButton"}
+            },
+            "bindings": {
+                "label": {"<-": "@repetition:iteration.object.name"}
             }
         },
         "songs": {
