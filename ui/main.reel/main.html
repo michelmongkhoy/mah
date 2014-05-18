@@ -13,17 +13,23 @@
                 "element": {"#": "main"}
             }
         },
-        "substitution": {
-            "prototype": "montage/ui/substitution.reel",
+        "rooms": {
+            "prototype": "ui/rooms.reel",
             "properties": {
-                "element": {"#": "substitution"},
-                "switchValue": "start"
+                "element": {"#": "rooms"}
             }
         },
         "start": {
             "prototype": "ui/start.reel",
             "properties": {
                 "element": {"#": "start"}
+            }
+        },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"},
+                "switchValue": "start"
             }
         }
     }
@@ -33,6 +39,7 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <div data-montage-id="substitution">
             <div data-arg="start" data-montage-id="start"></div>
+            <div data-montage-id="rooms"></div>
         </div>
     </div>
 </body>
