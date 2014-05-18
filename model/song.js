@@ -18,5 +18,8 @@ exports.Song = Montage.specialize(/** @lends Song# */ {
     },
     cover: {
         value: null
+    },
+    isSelected: {
+        value: false
     }
 });
