@@ -87,7 +87,7 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
     },
     handleSelectSongsButtonAction: {
         value: function(event) {
-            //this.substitutionValue = "play";
+            //
             getPlaylist(); // from mah.js
             if (globalPlaylist.length > 0){
                 BeatsService.playPreview(globalPlaylist[0].id);
@@ -96,5 +96,10 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
     },
     substitutionValue: {
         value: null
-    }
+    },
+    handleGoPlayAction:{
+            value: function(){
+                this.substitutionValue = "play";
+            }
+        }
 });
