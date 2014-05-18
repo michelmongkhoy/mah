@@ -31,7 +31,7 @@ exports.Rooms = Component.specialize(/** @lends Rooms# */ {
         value: null
     },
     substitutionValue: {
-        value: null;
+        value: null
     },
     handleCreateButtonAction: {
         value: function(event){
