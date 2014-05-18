@@ -56,7 +56,7 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
                 lcPlaylist.id = playlists[i].id;
                 lcPlaylist.name = playlists[i].label;
                 lcPlaylist.owner = playlists[i].owner;
-                lcPlaylist1.songs = [];
+                lcPlaylist.songs = [];
                 this.playlists.push(lcPlaylist);
             }
         }
