@@ -55,7 +55,7 @@ exports.Play = Component.specialize(/** @lends Play# */ {
                     var winRef = new Firebase('https://mah.firebaseio.com/rounds/0/winners');
                     winRef.once('value', function(snapshot) { 
                         // if ( $.inArray(answer, snapshot.val()) ) {
-                        $('.image-playing').attr("src", answer +".png");
+                        $('.image-playing').attr("src", "/assets/images/" + answer +".png");
                         // }
                     });
                 });
