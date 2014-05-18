@@ -3,3 +3,6 @@
 .MahButtonHome:hover {
    cursor:pointer;
 }
+.MahButtonHome p {
+    text-align: center;
+}
