@@ -14,6 +14,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
+    enterDocument: {
+        value: function(){
+            getToken();
+        }
+    }
     substitutionValue: {
         value: "picksongs"
     }
