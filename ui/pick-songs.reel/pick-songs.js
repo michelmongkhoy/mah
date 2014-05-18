@@ -25,12 +25,12 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
             
             var lcSong11 = new Song();
             lcSong11.name = "Baby";
-            lcSong11.songs.push(lcSong11);
+            lcPlaylist1.songs.push(lcSong11);
             
             var lcSong12 = new Song();
             lcSong12.name = "Boyfriend";
-            lcSong12.songs.push(lcSong12);  
-            
+            lcPlaylist1.songs.push(lcSong12);
+                        
             this.playlists.push(lcPlaylist1);
             
             var lcPlaylist2 = new Playlist();
@@ -40,11 +40,11 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
 
             var lcSong21 = new Song();
             lcSong21.name = "Let It Be";
-            lcSong21.songs.push(lcPlaylist2);
+            lcPlaylist2.songs.push(lcSong21);
 
             var lcSong22 = new Song();
             lcSong22.name = "Yesterday";
-            lcSong22.songs.push(lcSong22); 
+            lcPlaylist2.songs.push(lcSong22); 
             
             this.playlists.push(lcPlaylist2);
             
