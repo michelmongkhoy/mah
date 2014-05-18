@@ -19,6 +19,12 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
             this.playlists = [];
             
             var lcPlaylist1 = new Playlist();
+            lcPlaylist1.name = "Justin Bieber greatest hits";
+            this.playlists.push(lcPlaylist1);
+            
+            var lcPlaylist2 = new Playlist();
+            lcPlaylist2.name = "The Beatles";
+            this.playlists.push(lcPlaylist2);
             
         }
     },
