@@ -10,6 +10,14 @@
                 "element": {"#": "owner"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Select Songs for me"
+            }
+        },
         "playlistButton": {
             "prototype": "ui/mah-button-home.reel",
             "properties": {
@@ -34,6 +42,15 @@
             },
             "bindings": {
                 "content": {"<-": "@owner.playlists"}
+            }
+        },
+        "selectedSongCondition": {
+            "prototype": "montage/ui/condition.reel",
+            "properties": {
+                "element": {"#": "selectedSongCondition"}
+            },
+            "bindings": {
+                "condition": {"<->": "@songs:iteration.object.isSelected"}
             }
         },
         "songButton": {
@@ -75,15 +92,6 @@
                 "element": {"#": "text2"},
                 "value": "SONGS"
             }
-        },
-        "selectedSongCondition": {
-            "prototype": "montage/ui/condition.reel",
-            "properties": {
-                "element": {"#": "selectedSongCondition"}
-            },
-            "bindings": {
-                "condition": {"<->": "@songs:iteration.object.isSelected"}
-            }
         }
     }
     </script>
@@ -94,14 +102,15 @@
         <div data-montage-id="playlists">
             <div data-montage-id="playlistButton"></div>
         </div>
-        <hr/>
+        <hr>
         <p data-montage-id="text2" class="subHeader"></p>
         <div data-montage-id="songs">
             <div data-montage-id="selectedSongCondition" style="float:left;padding-left:5%;margin-right:-5%">
-                <img src="/assets/images/icon_17642.png" style="width:2em;height:2em;margin-top:15px;"/>
+                <img src="/assets/images/icon_17642.png" style="width:2em;height:2em;margin-top:15px;">
             </div>
             <div data-montage-id="songButton"></div>
         </div>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
