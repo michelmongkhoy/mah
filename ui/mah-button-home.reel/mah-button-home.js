@@ -16,6 +16,7 @@ exports.MahButtonHome = AbstractButton.specialize(/** @lends MahButtonHome# */ {
     constructor: {
         value: function MahButtonHome() {
             this.super();
+            this.classList.add("MahButtonHome");
         }
     }
 });
