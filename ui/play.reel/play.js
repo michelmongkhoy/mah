@@ -27,6 +27,37 @@ exports.Play = Component.specialize(/** @lends Play# */ {
             this.players.push(lcPlayer2);
         }
     },
+    enterDocument: {
+        value: function(){
+            $(document).ready(function(){
+
+                $('#getAuthKey').click(function (e){
+                    BeatsService.getAccessToken();
+                });
+
+                init();
+                createGame('Sasi');
+                joinGame('Tan');
+                joinGame('Ray');
+                joinGame('Michel');
+                startRound();
+
+
+                $(".choice").click(function(e) {
+                    console.log(e);
+                    answer = $(e.target).attr("id");
+                    answer = answer.split('-');
+                    answer = answer[1];
+                    console.log(answer);
+                    submitAnswer('Sasi', answer);  	
+                    $("#answer").text(answer);
+                });
+
+
+
+            });
+        }       
+    },
     players: {
         value: null
     },
