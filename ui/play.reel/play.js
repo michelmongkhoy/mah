@@ -15,15 +15,15 @@ exports.Play = Component.specialize(/** @lends Play# */ {
             
             this.players = [];
 
-            var lcRoom1 = new Room();
-            lcRoom1.identifier = "room1";
-            lcRoom1.name = "# Room 1";
-            this.roomList.push(lcRoom1);
+            var lcPlayer1 = new Room();
+            lcPlayer1.identifier = "player1";
+            lcPlayer1.name = "# PLayer 1";
+            this.roomList.push(lcPlayer1);
 
-            var lcRoom2 = new Room();
-            lcRoom2.identifier = "room2";
-            lcRoom2.name = "# Room 2";
-            this.roomList.push(lcRoom2);
+            var lcPlayer2 = new Room();
+            lcPlayer2.identifier = "room2";
+            lcPlayer2.name = "# Player 2";
+            this.roomList.push(lcPlayer2);
         }
     },
     players: {
