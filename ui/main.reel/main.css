@@ -10,6 +10,6 @@
 .Main .Rooms {
     /* Center the tag editor */
     margin-top: 75px;
-    margin-left: 15%;
-    margin-right: 15%;   
+    margin-left: 0;
+    margin-right: 0;   
 }
