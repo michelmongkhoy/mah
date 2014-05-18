@@ -3,9 +3,7 @@
 */
 
 .digit-Button {
-    
-    color: yellow; /* 1 */
-    
+        
     display: inline-block; /* 1 */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
