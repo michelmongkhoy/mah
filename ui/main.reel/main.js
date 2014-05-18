@@ -15,6 +15,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     substitutionValue: {
-        value: "play"
+        value: "picksongs"
     }
 });
