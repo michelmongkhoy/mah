@@ -19,7 +19,7 @@ exports.Start = Component.specialize(/** @lends Start# */ {
     },
     handleCreateButtonAction: {
         value: function(event){
-            this.substitutionValue = "rooms-create";
+            this.substitutionValue = "create";
             console.log("handleCreateButtonAction");
         }
     },
