@@ -52,9 +52,6 @@ exports.Play = Component.specialize(/** @lends Play# */ {
                     submitAnswer('Sasi', answer);  	
                     $("#answer").text(answer);
                 });
-
-
-
             });
         }       
     },
