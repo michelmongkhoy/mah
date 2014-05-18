@@ -55,5 +55,15 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
     },
     songs: {
         value: null
+    },
+    handlePlaylistButtonAction: {
+        value: function(event) {
+            var selectedIndex = event.detail.playlistIndex;
+            console.log(selectedIndex);
+        }
+    },
+    handleSongButtonAction: {
+        value: function(event) {
+        }
     }
 });
