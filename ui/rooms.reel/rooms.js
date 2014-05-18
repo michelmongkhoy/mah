@@ -14,6 +14,7 @@ exports.Rooms = Component.specialize(/** @lends Rooms# */ {
             this.super();
         }
     },
-    rooms: {
-        value: ["#Room1",
+    roomList: {
+        value: null
+    }
 });
