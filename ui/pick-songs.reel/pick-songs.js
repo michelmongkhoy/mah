@@ -51,7 +51,7 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
 
             // playlists should bet available globally
 
-            for (var i = 0; i < playlists.length; i++) {
+            for (var i = 0; i < this.playlists.length; i++) {
                 var lcPlaylist = new Playlist();
                 lcPlaylist.id = this.playlists[i].id;
                 lcPlaylist.name = this.playlists[i].label;
