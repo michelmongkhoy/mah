@@ -60,6 +60,7 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
         value: function(event) {
             var selectedIndex = event.detail.playlistIndex;
             console.log(selectedIndex);
+            this.songs = this.playlists[selectedIndex].songs;
         }
     },
     handleSongButtonAction: {

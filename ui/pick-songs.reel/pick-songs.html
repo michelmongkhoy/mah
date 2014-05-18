@@ -16,13 +16,13 @@
                 "element": {"#": "playlistButton"}
             },
             "bindings": {
+                "detail.playlistIndex": {"<-": "@playlists:iteration.index"},
                 "label": {"<-": "@playlists:iteration.object.name"}
             },
             "listeners": [
                 {
                     "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
+                    "useCapture": false
                 }
             ]
         },
