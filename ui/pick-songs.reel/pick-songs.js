@@ -88,7 +88,6 @@ exports.PickSongs = Component.specialize(/** @lends PickSongs# */ {
     handleSelectSongsButtonAction: {
         value: function(event) {
             getPlaylist(); // from mah.js
-            getToken();
         }
     }
 });
