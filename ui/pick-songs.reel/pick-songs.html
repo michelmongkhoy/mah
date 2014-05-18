@@ -17,7 +17,14 @@
             },
             "bindings": {
                 "label": {"<-": "@playlists:iteration.object.name"}
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "playlists": {
             "prototype": "montage/ui/repetition.reel",
@@ -35,7 +42,14 @@
             },
             "bindings": {
                 "label": {"<-": "@songs:iteration.object.name"}
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "songs": {
             "prototype": "montage/ui/repetition.reel",
