@@ -87,5 +87,8 @@ exports.Play = Component.specialize(/** @lends Play# */ {
             var playersRef = new Firebase('https://mah.firebaseio.com/players');
             playersRef.set(players);
         }
+    },
+    tracks: {
+        value: [{"title":"coucou"}]
     }
 });
